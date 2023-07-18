@@ -26,12 +26,28 @@
             <input type="text" name="" id="nomeempresainput" placeholder="Digite o nome da Empresa" required>
             <p>CNPJ da Empresa:</p>
             <input type="text" name="" id="cnpjinput" placeholder="Digite o CNPJ" required>
+            <div id="boxlocation">
+                <div id="divcity">
+                    <p>Cidade:</p>
+                    <input type="text" name="" id="cityinput" placeholder="Digite a Cidade" required>
+                </div>
+                <div id="divuf">
+                    <p>UF:</p>
+                    <input type="text" name="" id="ufinput" placeholder="UF" required maxlength="2">
+                </div>
+            </div>
             <p>Data de Admissão</p>
             <input type="date" name="" id="dateinput"> 
-            <p>Horário de Entrada:</p>
-            <input type="text" name="" id="enterinput" placeholder="Digite o horário de Entrada" required>
-            <p>Horário de Saída:</p>
-            <input type="text" name="" id="saidainput" placeholder="Digite o horário de Saída" required>
+            <div id="divboxhr">
+                <div id="diventradainput">
+                    <p>Horário <br> de <br> Entrada:</p>
+                    <input type="text" name="" id="enterinput" placeholder="Ex: 08:00" required>
+                </div>
+                <div id="divsaidainput">
+                    <p>Horário <br> de <br> Saída:</p>
+                    <input type="text" name="" id="saidainput" placeholder="Ex: 18:00" required>
+                </div>
+            </div>
             <input type="button" value="Imprimir" id="buttonprint">
             <input type="button" value="Visualizar Impressão" id="buttonview">
         </form>
@@ -39,12 +55,12 @@
             <p>Declaramos para os devidos fins, que <b id="nomepreenchido">Joás Amorim Fernandes</b>, inscrito(a) no CPF n° <b id="cpfpreenchido">036.725.202-33</b>
                 portador(a) do RG de n° <b id="rgpreenchido">155455151</b> ocupa o cargo de <b id="cargopreenchido">Auxiliar de Serviços Gerais</b> na empresa <b id="empresapreenchido">Irmãos Geraldinos</b>
                 CNPJ n° <b id="cnpjpreenchido">10.573.521/0001-91</b> desde <b id="datapreenchido">10/03/1999</b>, tendo uma jornada de trabalho das <b id="entradapreenchido">08h</b>
-                às <b id="saidapreenchido">16h</b> horas.
+                às <b id="saidapreenchido">18h</b> horas.
                 Por ser expressão da verdade, assino a presente.
-                <br> <br> <br> <br> 
+                <br> <br> <br> <br> <br> 
                 <nobr id="location">[Local, Dia, Mês e Ano]</nobr>
-                <br> <br> <br> <br>
-                <nobr id="line">_______________________________</nobr>
+                <br> <br> <br> <br> <br> 
+                <nobr id="line">______________________________________________</nobr>
                 <nobr id="nameassinatura">(Assinatura)</nobr>
             </p>
         </div>

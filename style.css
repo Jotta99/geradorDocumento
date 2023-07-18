@@ -23,16 +23,15 @@ body {
 
 a{
     text-decoration: none;
-    color: black;
+    color: rgb(255, 230, 230);
     font-weight: 600;
 }
 a:hover{
     text-decoration-line: underline;
 }
 
-
-
 #title{
+    color: rgb(255, 230, 230);
     display: flex;
     justify-content: center;
     padding-top: 15px;
@@ -46,19 +45,89 @@ a:hover{
     box-shadow: 3px 0px 23px 5px rgba(0,0,0,0.21);
     border-radius: 15px;
     width: 350px;
-    height: 665px;
+    height: 700px;
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+#boxlocation{
+    display: flex;
+    align-items: center;
+}
+
+#divcity {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    right: 13px;
+}
+
+#ufinput{
+      width: 55px;
+      height: 25px;
+}
+
+#divuf {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 10px;
+    
+}
+
+#cityinput{
+    width: 200px;
+    height: 25px;
+}
+
+#divboxhr {
+    display: flex;
+    align-items: center;
+}
+
+#divboxhr p {
+    text-align: center;
+}
+
+#diventradainput{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    right:20px;
+}
+
+#enterinput {
+    width: 80px;
+    height: 25px;
+}
+
+#saidainput {
+    width: 80px;
+    height: 25px;
+}
+
+#divsaidainput{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 20px;
+}
+
 p{
     font-size: 16px;
-    padding-top: 17px;
+    padding-top: 15px;
     padding-bottom: 2px;
-    text-align: left;
-    
+    text-align: left;   
 }
 
 input{
@@ -110,20 +179,25 @@ input:focus{
        #title{
         display: none;
        }
+       body {
+        background: none;
+        padding: 0;
+        height: 500px;
+       }
 
        #page{
             visibility: visible;
             display: flex;
+            position: relative;
+            bottom: 620px;
            width: 21cm;
-           min-height: 29.7cm;
+           min-height: 10cm;
            padding: 2cm;
            margin: 1cm auto;
-           border: 1px #D3D3D3 solid;
-           border-radius: 5px;
-           background: white;
-           box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
            font-family: Arial, Helvetica, sans-serif;
            font-size: 24px;
+           text-align: justify;
+           scale: 150%;
        }
        
        #location, #line, #nameassinatura{
@@ -131,3 +205,10 @@ input:focus{
            justify-content: center;
        }
 }
+
+
+/* 
+border: 1px #D3D3D3 solid;
+border-radius: 5px;
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+*/
