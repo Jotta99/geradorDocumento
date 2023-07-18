@@ -59,3 +59,13 @@ buttonPrint.addEventListener('click', () => {
 })
 
 console.log(rgInputPreenchido.textContent)
+
+
+// Masks Input
+
+cpfInput.addEventListener('keypress', () => {
+    console.log(cpfInput.value.length)
+    if (cpfInput.value.length === 3) {
+        cpfInput.value + cpfInput.value + '.'
+    }
+})
