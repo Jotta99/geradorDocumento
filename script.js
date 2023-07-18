@@ -18,7 +18,7 @@ const month = date.getMonth()
 const year = date.getFullYear()
 const arrMonth = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']
 
-console.log(year)
+    console.log(year)
 
 // Impressão
 // Elementos DOM
@@ -43,18 +43,19 @@ buttonPrint.addEventListener('click', () => {
         alert('Campos em branco!')
     }
     else {
-    nameInputPreenchido.textContent = nameInput.value
-    cpfInputPreenchido.textContent = cpfInput.value
-    rgInputPreenchido.textContent = rgInput.value
-    cargoInputPreenchido.textContent = cargoInput.value
-    nomeEmpresaInputPreenchido.textContent = nomeEmpresaInput.value
-    cnpjInputPreenchido.textContent = cnpjInput.value
-    localInputPreenchido.textContent = cityInput.value + ', ' + ufInput.value + ', ' + day + ' de ' + arrMonth[month] + ' de ' + year
-    enterInputPreenchido.textContent = enterInput.value
-    saidaInputPreenchido.textContent = saidaInput.value
-    dataInputPreenchido.textContent = dateInput.value
-    window.print()
-}
+        nameInputPreenchido.textContent = nameInput.value
+        cpfInputPreenchido.textContent = cpfInput.value
+        rgInputPreenchido.textContent = rgInput.value
+        cargoInputPreenchido.textContent = cargoInput.value
+        nomeEmpresaInputPreenchido.textContent = nomeEmpresaInput.value
+        cnpjInputPreenchido.textContent = cnpjInput.value
+        localInputPreenchido.textContent = cityInput.value + ', ' + ufInput.value + ', ' + day + ' de ' + arrMonth[month] + ' de ' + year
+        enterInputPreenchido.textContent = enterInput.value
+        saidaInputPreenchido.textContent = saidaInput.value
+        let regexDateFormat = dateInput.value.replace(/(\d{4})-(\d{2})-(\d{2})/, '$3/$2/$1')
+        dataInputPreenchido.textContent = regexDateFormat
+        window.print()
+    }
 })
 
 console.log(rgInputPreenchido.textContent)
