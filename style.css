@@ -1,10 +1,18 @@
 *{
-    overflow: hidden;
     font-family: sans-serif;
     padding: 0;
     margin: 0;
 }
+body {
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+#page{
+    visibility: hidden;
+    display: none;
+}
 #header{
     padding-top: 10px;
     display: flex;
@@ -32,10 +40,13 @@ a:hover{
 }
 
 #form {
+    background-color: rgba(255, 241, 241, 0.158);
+    -webkit-box-shadow: 3px 0px 23px 5px rgba(0, 0, 0, 0.822);
+    -moz-box-shadow: 3px 0px 23px 5px rgba(0,0,0,0.21);
+    box-shadow: 3px 0px 23px 5px rgba(0,0,0,0.21);
+    border-radius: 15px;
     width: 350px;
     height: 665px;
-    border-radius: 5px;
-    background: #dfbbbb;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -85,10 +96,38 @@ input:focus{
 
 
 
-/*Impressão*/
+@media print {
 
-#page{
-    background-color: rgb(224, 205, 205);
-    width: 565px;
-    height: 800px;
+    form{
+        display: none;
+        visibility: hidden;
+       }
+       
+       #header{
+        display: none;
+       }
+
+       #title{
+        display: none;
+       }
+
+       #page{
+            visibility: visible;
+            display: flex;
+           width: 21cm;
+           min-height: 29.7cm;
+           padding: 2cm;
+           margin: 1cm auto;
+           border: 1px #D3D3D3 solid;
+           border-radius: 5px;
+           background: white;
+           box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+           font-family: Arial, Helvetica, sans-serif;
+           font-size: 24px;
+       }
+       
+       #location, #line, #nameassinatura{
+           display: flex;
+           justify-content: center;
+       }
 }
