@@ -16,22 +16,36 @@
         <form id="form">
             <p>Nome:</p>
             <input type="text" name="" id="nameinput" placeholder="Digite o Nome" required>
-            <p>CPF:</p>
-            <input type="text" name="" id="cpfinput" placeholder="Digite o CPF" required maxlength="14">
-            <p>RG:</p>
-            <input type="text" name="" id="rginput" placeholder="Digite o RG" required>
-            <p>Cargo/Função:</p>
-            <input type="text" name="" id="cargoinput" placeholder="Digite o Cargo" required>
-            <p>Nome da Empresa:</p>
-            <input type="text" name="" id="nomeempresainput" placeholder="Digite o nome da Empresa" required>
-            <p>CNPJ da Empresa:</p>
-            <input type="text" name="" id="cnpjinput" placeholder="Digite o CNPJ" required>
+            <div id="boxcpfrg">
+                <div class="inputdiv">
+                    <p>CPF:</p>
+                    <input type="text" name="" id="cpfinput" placeholder="Digite o CPF" required maxlength="14">
+                </div>
+                <div class="inputdiv">
+                    <p>RG:</p>
+                    <input type="text" name="" id="rginput" placeholder="Digite o RG" required>
+                </div>
+                </div>
+            <div id="boxcargonomeempresa">
+                <div class="inputdiv">
+                    <p>Cargo/Função:</p>
+                    <input type="text" name="" id="cargoinput" placeholder="Digite o Cargo" required>
+                </div>
+                <div class="inputdiv">
+                    <p>Nome da Empresa:</p>
+                    <input type="text" name="" id="nomeempresainput" placeholder="Digite o nome da Empresa" required>
+                </div>
+            </div>
             <div id="boxlocation">
-                <div id="divcity">
+                <div class="inputdiv">
+                    <p>CNPJ da Empresa:</p>
+                    <input type="text" name="" id="cnpjinput" placeholder="Digite o CNPJ" required>
+                </div>
+                <div class="inputdiv">
                     <p>Cidade:</p>
                     <input type="text" name="" id="cityinput" placeholder="Digite a Cidade" required>
                 </div>
-                <div id="divuf">
+                <div class="inputdiv">
                     <p>UF:</p>
                     <input type="text" name="" id="ufinput" placeholder="UF" required maxlength="2">
                 </div>
@@ -40,11 +54,11 @@
             <input type="date" name="" id="dateinput"> 
             <div id="divboxhr">
                 <div id="diventradainput">
-                    <p>Horário <br> de <br> Entrada:</p>
+                    <p>Horário de Entrada:</p>
                     <input type="text" name="" id="enterinput" placeholder="Ex: 08:00" required>
                 </div>
                 <div id="divsaidainput">
-                    <p>Horário <br> de <br> Saída:</p>
+                    <p>Horário de Saída:</p>
                     <input type="text" name="" id="saidainput" placeholder="Ex: 18:00" required>
                 </div>
             </div>

@@ -6,16 +6,9 @@
     margin: 0;
     font-family: 'Open Sans', sans-serif;
 }
-body {
-    background-image: url(background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
-#page{
-    visibility: hidden;
-    display: none;
-}
+/* HEADER */
+
 #header{
     padding-top: 10px;
     display: flex;
@@ -24,22 +17,24 @@ body {
     text-decoration: none;
 }
 
+#title{
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
 a{
     text-decoration: none;
-    color: rgb(255, 230, 230);
+    color: rgb(0, 0, 0);
     font-weight: 600;
 }
 a:hover{
     text-decoration-line: underline;
 }
 
-#title{
-    color: rgb(255, 230, 230);
-    display: flex;
-    justify-content: center;
-    padding-top: 10px;
-    padding-bottom: 20px;
-}
+/* BODY */
 
 #form {
     background-color: rgba(255, 241, 241, 0.336);
@@ -47,11 +42,44 @@ a:hover{
     -moz-box-shadow: 3px 0px 23px 5px rgba(0,0,0,0.21);
     box-shadow: 3px 0px 23px 5px rgba(0,0,0,0.21);
     border-radius: 15px;
-    width: 350px;
+    width: 650px;
     height: 720px;
     margin: auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background-color: #76b6c0;
+}
+
+#page{
+    visibility: hidden;
+    display: none;
+}
+
+#nameinput{
+    width: 400px;
+}
+
+#boxcpfrg{
+    display: flex;
+    align-items: center;
+}
+
+.inputdiv{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 13px 0px 13px;
+}
+
+#boxcargonomeempresa{
+    display: flex;
     align-items: center;
 }
 
@@ -60,28 +88,9 @@ a:hover{
     align-items: center;
 }
 
-#divcity {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    right: 13px;
-}
-
 #ufinput{
       width: 55px;
       height: 40px;
-}
-
-#divuf {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    left: 10px;
-    
 }
 
 #cityinput{
@@ -96,7 +105,6 @@ a:hover{
 
 #divboxhr p {
     text-align: center;
-    line-height: 1;
 }
 
 #diventradainput{
@@ -129,7 +137,7 @@ a:hover{
 
 p{
     font-size: 16px;
-    padding-top: 8px;
+    padding-top: 20px;
     padding-bottom: 2px;
     text-align: left;
     font-weight: 600;
@@ -148,7 +156,7 @@ input{
 
 #buttonprint{
     margin-top: 25px;
-    width: 220px;
+    width: 300px;
     height: 40px;
     font-size: 24px;
     font-weight: 600;
@@ -169,8 +177,6 @@ input:focus{
 
 #buttonprint:hover{
     margin-top: 25px;
-    width: 220px;
-    height: 40px;
     font-size: 24px;
     font-weight: 600;
     scale: 104%;
@@ -181,8 +187,9 @@ input:focus{
     box-shadow: 0px 16px 24px -12px rgba(0,0,0,0.39);
 }
 
-@media print {
 
+
+@media print {
     form{
         display: none;
         visibility: hidden;
@@ -206,14 +213,14 @@ input:focus{
             display: flex;
             position: relative;
             bottom: 620px;
-           width: 21cm;
-           min-height: 10cm;
-           padding: 2cm;
-           margin: 1cm auto;
-           font-family: Arial, Helvetica, sans-serif;
-           font-size: 24px;
-           text-align: justify;
-           scale: 150%;
+            width: 21cm;
+            min-height: 10cm;
+            padding: 2cm;
+            margin: 1cm auto;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 24px;
+            text-align: justify;
+            scale: 150%;
        }
        
        #location, #line, #nameassinatura{
