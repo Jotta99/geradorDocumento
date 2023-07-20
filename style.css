@@ -21,8 +21,7 @@
     color: rgb(0, 0, 0);
     display: flex;
     justify-content: center;
-    padding-top: 10px;
-    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 a{
@@ -44,7 +43,7 @@ a:hover{
     border-radius: 15px;
     width: 650px;
     height: 600px;
-    margin: 50px ;
+    margin: 26px 0px 15px 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -56,13 +55,16 @@ body {
     background-color: #76b6c0;
 }
 
-#page{
-    visibility: hidden;
+#page {
     display: none;
+    visibility: hidden;
 }
 
 #nameinput{
     width: 400px;
+}
+#nameinput::first-letter{
+    text-transform: uppercase;
 }
 
 #boxcpfrg{
@@ -92,6 +94,7 @@ body {
 #ufinput{
       width: 55px;
       height: 40px;
+      text-transform: uppercase;
 }
 
 #cityinput{
@@ -180,12 +183,12 @@ input:focus{
     margin-top: 25px;
     font-size: 24px;
     font-weight: 600;
-    scale: 104%;
+    scale: 102%;
     transition: all 0.2s;
     cursor: pointer;
     -webkit-box-shadow: 0px 16px 24px -12px rgba(0,0,0,0.39);
     -moz-box-shadow: 0px 16px 24px -12px rgba(0,0,0,0.39);
-    box-shadow: 0px 16px 24px -12px rgba(0,0,0,0.39);
+    box-shadow: 0px 16px 24px -12px rgba(0, 0, 0, 0.041);
 }
 
 @media print {
@@ -203,8 +206,6 @@ input:focus{
        }
        body {
         background: none;
-        padding: 0;
-        height: 500px;
        }
 
        #page{
@@ -219,7 +220,7 @@ input:focus{
             font-family: Arial, Helvetica, sans-serif;
             font-size: 24px;
             text-align: justify;
-            scale: 150%;
+            scale: 120%;
        }
        
        #location, #line, #nameassinatura{

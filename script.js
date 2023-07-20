@@ -49,7 +49,7 @@ buttonPrint.addEventListener('click', () => {
         cargoInputPreenchido.textContent = cargoInput.value
         nomeEmpresaInputPreenchido.textContent = nomeEmpresaInput.value
         cnpjInputPreenchido.textContent = cnpjInput.value
-        localInputPreenchido.textContent = cityInput.value + ', ' + ufInput.value + ', ' + day + ' de ' + arrMonth[month] + ' de ' + year
+        localInputPreenchido.textContent = cityInput.value + ', ' + ufInput.value.toUpperCase() + ', ' + day + ' de ' + arrMonth[month] + ' de ' + year
         enterInputPreenchido.textContent = enterInput.value
         saidaInputPreenchido.textContent = saidaInput.value
         let regexDateFormat = dateInput.value.replace(/(\d{4})-(\d{2})-(\d{2})/, '$3/$2/$1')
@@ -60,12 +60,51 @@ buttonPrint.addEventListener('click', () => {
 
 console.log(rgInputPreenchido.textContent)
 
-
 // Masks Input
 
 cpfInput.addEventListener('keypress', () => {
-    console.log(cpfInput.value.length)
-    if (cpfInput.value.length === 3) {
-        cpfInput.value + cpfInput.value + '.'
+    let cpfLength = cpfInput.value.length
+    if(cpfLength === 3 | cpfLength === 7) {
+        cpfInput.value += '.'
+    }
+    if(cpfLength === 11) {
+        cpfInput.value += '-'
+    }
+})
+
+cnpjInput.addEventListener('keypress', () => {
+    let cpfLength = cnpjInput.value.length
+    if(cpfLength === 2 | cpfLength === 6) {
+        cnpjInput.value += '.'
+    }
+    if(cpfLength === 10) {
+        cnpjInput.value += '/'
+    }
+    if(cpfLength === 15) {
+        cnpjInput.value += '-'
+    }
+})
+
+enterInput.addEventListener('keypress', () => {
+    let cpfLength = enterInput.value.length
+    if(cpfLength === 2) {
+        enterInput.value += ':'
+    }
+})
+
+saidaInput.addEventListener('keypress', () => {
+    let cpfLength = saidaInput.value.length
+    if(cpfLength === 2) {
+        saidaInput.value += ':'
+    }
+})
+
+cpfInput.addEventListener('keypress', () => {
+    let cpfLength = cpfInput.value.length
+    if(cpfLength === 3 | cpfLength === 7) {
+        cpfInput.value += '.'
+    }
+    if(cpfLength === 11) {
+        cpfInput.value += '-'
     }
 })
