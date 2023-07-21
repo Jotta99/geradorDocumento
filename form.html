@@ -8,62 +8,70 @@
     </head>
     <body>
         <header id="header">
-            <a href="">Início</a>
-            <a href="">Sobre mim</a>
-            <a href="print.html">Fale Comigo</a>
+            <a href="form.html">Início</a>
+            <a href="" class="links">Sobre mim</a>
+            <a href="" class="links">Fale Comigo</a>
         </header>
         <h1 id="title">Declaração de Trabalho</h1>
-        <form id="form">
-            <p>Nome:</p>
-            <input type="text" name="" id="nameinput" placeholder="Digite o Nome" required>
-            <div id="boxcpfrg">
-                <div class="inputdiv">
-                    <p>CPF:</p>
-                    <input type="text" name="" id="cpfinput" placeholder="Digite o CPF" required maxlength="14">
+        <main id="mainfather">
+            <form id="form">
+                <p>Nome:</p>
+                <input type="text" name="" id="nameinput" placeholder="Digite o Nome" required>
+                <div id="boxcpfrg">
+                    <div class="inputdiv">
+                        <p>CPF:</p>
+                        <input type="text" name="" id="cpfinput" placeholder="Digite o CPF" required maxlength="14">
+                    </div>
+                    <div class="inputdiv">
+                        <p>RG:</p>
+                        <input type="text" name="" id="rginput" placeholder="Digite o RG" required maxlength="9">
+                    </div>
+                    </div>
+                <div id="boxcargonomeempresa">
+                    <div class="inputdiv">
+                        <p>Cargo/Função:</p>
+                        <input type="text" name="" id="cargoinput" placeholder="Digite o Cargo" required>
+                    </div>
+                    <div class="inputdiv">
+                        <p>Nome da Empresa:</p>
+                        <input type="text" name="" id="nomeempresainput" placeholder="Digite o nome da Empresa" required>
+                    </div>
                 </div>
-                <div class="inputdiv">
-                    <p>RG:</p>
-                    <input type="text" name="" id="rginput" placeholder="Digite o RG" required maxlength="9">
+                <div id="boxlocation">
+                    <div class="inputdiv">
+                        <p>CNPJ da Empresa:</p>
+                        <input type="text" name="" id="cnpjinput" placeholder="Digite o CNPJ" required maxlength="18"> 
+                    </div>
+                    <div class="inputdiv">
+                        <p>Cidade:</p>
+                        <input type="text" name="" id="cityinput" placeholder="Digite a Cidade" required>
+                    </div>
+                    <div class="inputdiv">
+                        <p>UF:</p>
+                        <input type="text" name="" id="ufinput" placeholder="UF" required maxlength="2">
+                    </div>
                 </div>
+                <p>Data de Admissão</p>
+                <input type="date" name="" id="dateinput"> 
+                <div id="divboxhr">
+                    <div id="diventradainput">
+                        <p>Horário de Entrada:</p>
+                        <input type="text" name="" id="enterinput" placeholder="Ex: 08:00" required maxlength="5">
+                    </div>
+                    <div id="divsaidainput">
+                        <p>Horário de Saída:</p>
+                        <input type="text" name="" id="saidainput" placeholder="Ex: 18:00" required maxlength="5">
+                    </div>
                 </div>
-            <div id="boxcargonomeempresa">
-                <div class="inputdiv">
-                    <p>Cargo/Função:</p>
-                    <input type="text" name="" id="cargoinput" placeholder="Digite o Cargo" required>
-                </div>
-                <div class="inputdiv">
-                    <p>Nome da Empresa:</p>
-                    <input type="text" name="" id="nomeempresainput" placeholder="Digite o nome da Empresa" required>
-                </div>
-            </div>
-            <div id="boxlocation">
-                <div class="inputdiv">
-                    <p>CNPJ da Empresa:</p>
-                    <input type="text" name="" id="cnpjinput" placeholder="Digite o CNPJ" required maxlength="18"> 
-                </div>
-                <div class="inputdiv">
-                    <p>Cidade:</p>
-                    <input type="text" name="" id="cityinput" placeholder="Digite a Cidade" required>
-                </div>
-                <div class="inputdiv">
-                    <p>UF:</p>
-                    <input type="text" name="" id="ufinput" placeholder="UF" required maxlength="2">
-                </div>
-            </div>
-            <p>Data de Admissão</p>
-            <input type="date" name="" id="dateinput"> 
-            <div id="divboxhr">
-                <div id="diventradainput">
-                    <p>Horário de Entrada:</p>
-                    <input type="text" name="" id="enterinput" placeholder="Ex: 08:00" required maxlength="5">
-                </div>
-                <div id="divsaidainput">
-                    <p>Horário de Saída:</p>
-                    <input type="text" name="" id="saidainput" placeholder="Ex: 18:00" required maxlength="5">
-                </div>
-            </div>
-            <input type="button" value="Imprimir" id="buttonprint">
-        </form>
+                <input type="button" value="Imprimir" id="buttonprint">
+            </form>
+            <main id="mainright">
+                <p id="preencha"><strong style="font-weight: 800;">Preencha</strong> os dados</p>
+                <img src="img.png" alt="" srcset="">
+                <p id="clique">Clique em imprimir</p>
+                <p id="epronto">e pronto!</p>
+            </main>
+        </main>
         <div id="page">
             <p>Declaramos para os devidos fins, que <b id="nomepreenchido">(Nome)</b>, inscrito(a) no CPF n° <b id="cpfpreenchido">(CPF)</b>
                 portador(a) do RG de n° <b id="rgpreenchido">(RG)</b> ocupa o cargo de <b id="cargopreenchido">(Cargo)</b> na empresa <b id="empresapreenchido">(Empresa)</b>

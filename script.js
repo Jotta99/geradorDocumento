@@ -17,8 +17,9 @@ const day = date.getDate()
 const month = date.getMonth()
 const year = date.getFullYear()
 const arrMonth = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']
+const links = document.getElementsByClassName('links')
 
-    console.log(year)
+    console.log(links)
 
 // Impressão
 // Elementos DOM
@@ -34,6 +35,10 @@ const enterInputPreenchido = document.getElementById('entradapreenchido')
 const saidaInputPreenchido = document.getElementById('saidapreenchido')
 
 // Eventos e Funções
+
+links.addEventListener('click', () => {
+    alert('Ainda estou trabalhando nessa parte :)')
+})
 
 buttonPrint.addEventListener('click', () => {
     if(nameInput.value === '' | cpfInput.value === '' |
