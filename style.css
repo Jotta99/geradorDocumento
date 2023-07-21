@@ -246,7 +246,7 @@ input:focus{
     font-size: 24px;
     font-weight: 600;
     scale: 102%;
-    transition: all 0.2s;
+    transition: all 0.2s ease;
     cursor: pointer;
     -webkit-box-shadow: 0px 16px 24px -12px rgba(0,0,0,0.39);
     -moz-box-shadow: 0px 16px 24px -12px rgba(0,0,0,0.39);
@@ -300,4 +300,82 @@ input:focus{
    
 }
 
-  
+/* TOOLTIP AVISO */
+
+  a#link1 {
+    transition: all 0.4s ease;
+    -webkit-transition: all .4s ease;
+    position: relative;
+  }
+  a#link1:before {
+    content: attr(data-title);
+    background-color: #000;
+    color: #FFF;
+    font-size: 20px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: -43px;
+    width: 320px;
+    height: 30px;
+    opacity: 0;
+    transition: all .4s ease;
+    border-radius: 5px;
+    box-shadow: 0px 0px 23px 1px rgba(0, 0, 0, 0.171);
+    text-indent: 18px;
+  }
+  a#link1:after {
+    content: "";
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    left: 5px;
+    bottom: -16px;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #000 transparent;
+    transition: all .4s ease;
+  }
+  a#link1:hover:after,
+  a#link1:hover:before {
+    opacity: 1;
+  }
+
+  a#link2 {
+    transition: all 0.4s ease;
+    -webkit-transition: all .4s ease;
+    position: relative;
+  }
+  a#link2:before {
+    content: attr(data-title);
+    background-color: #000;
+    color: #FFF;
+    font-size: 20px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: -43px;
+    width: 320px;
+    height: 30px;
+    opacity: 0;
+    transition: all .4s ease;
+    border-radius: 5px;
+    box-shadow: 0px 0px 23px 1px rgba(0, 0, 0, 0.171);
+    text-indent: 18px;
+  }
+  a#link2:after {
+    content: "";
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    left: 5px;
+    bottom: -16px;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #000 transparent;
+    transition: all .4s ease;
+  }
+  a#link2:hover:after,
+  a#link2:hover:before {
+    opacity: 1;
+  }
