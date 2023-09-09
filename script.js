@@ -1,4 +1,5 @@
 // Elementos DOM
+const buttonAlert = document.getElementById('buttonalert')
 const nameInput = document.getElementById('nameinput')
 const cpfInput = document.getElementById('cpfinput')
 const rgInput = document.getElementById('rginput')
@@ -38,7 +39,8 @@ buttonPrint.addEventListener('click', () => {
     rgInput.value === '' | cargoInput.value === '' |
     nomeEmpresaInput.value === '' | cnpjInput.value === '' |
     nameInput.value === '' | nameInput.value === ''){
-        alert('CAMPOS EM BRANCO!')
+        document.body.classList.toggle('show')
+        document.getElementById('alert').classList.toggle('show')
     }
     else {
         nameInputPreenchido.textContent = nameInput.value
