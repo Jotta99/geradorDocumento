@@ -60,13 +60,13 @@ a:hover{
     position: relative;
     scale: 95%;
     left: 75px;
+    z-index: 1000;
 }
 
 body {
     background-color: #76b6c0;
     height: 200px;
     width: 1349px;
-    
 }
 
 #page {
@@ -524,7 +524,7 @@ input:focus{
 #alert {
   border-radius: 10px;
   position: absolute;
-  z-index: 1000;
+  z-index: 1001;
   display: flex;
   justify-content: center;
   height: 50px;
