@@ -335,9 +335,9 @@
 
     .copyright-text{
         position: relative;
-        bottom: 20px;
+        bottom: 40px;
         font-size: 13px;
-        right: 55px;
+        left: -55px;
     }
 
     .text-justify{
