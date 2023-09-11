@@ -877,4 +877,51 @@ main img{
     font-weight: 800;
 }
 
+  @media print {
+
+    .site-footer
+    {
+      display: none;
+      visibility: hidden;
+    }
+    form{
+        display: none;
+        visibility: hidden;
+      }
+      
+      #header{
+        display: none;
+      }
+
+      #title{
+        display: none;
+      }
+      body {
+        background: none;
+      }
+      #mainright{
+        display: none;
+      }
+
+      #page{
+            visibility: visible;
+            display: flex;
+            position: absolute;
+            bottom: 850px;
+            right: 50px;
+            width: 21cm;
+            padding: 2cm;
+            margin: 1cm auto;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 24px;
+            text-align: justify;
+            scale: 120%;
+      }
+      
+      #location, #line, #nameassinatura{
+          display: flex;
+          justify-content: center;
+      }
+  }
+
 }
