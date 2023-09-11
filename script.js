@@ -38,7 +38,7 @@ const saidaInputPreenchido = document.getElementById('saidapreenchido')
 
 
 buttonAlert.addEventListener('click', () => {
-    alert.classList.add('close')
+    alert.style.display = "none"
 })
 
 buttonPrint.addEventListener('click', () => {
@@ -46,7 +46,7 @@ buttonPrint.addEventListener('click', () => {
     rgInput.value === '' | cargoInput.value === '' |
     nomeEmpresaInput.value === '' | cnpjInput.value === '' |
     nameInput.value === '' | nameInput.value === ''){
-        alert.classList.add('show')
+        alert.style.display = "flex"
     }
     else {
         nameInputPreenchido.textContent = nameInput.value

@@ -235,7 +235,6 @@ main img{
     font-weight: 800;
 }
 
-
 /*Animações*/
 
 input:focus{
@@ -262,7 +261,6 @@ input:focus{
 }
 
 /* MEDIAS */
-
 
 /* TOOLTIP AVISO */
 
@@ -343,7 +341,6 @@ input:focus{
   a#link2:hover:before {
     opacity: 1;
   }
-
 
 /* FOOTER */
 
@@ -540,42 +537,6 @@ input:focus{
   -moz-box-shadow: -4px 15px 29px -21px rgba(0,0,0,0.75);
   box-shadow: -4px 15px 29px -21px rgba(0,0,0,0.75);
   display: none;
-  transition: all 0.3s;
-}
-
-#alert.show {
-  border-radius: 10px;
-  position: absolute;
-  z-index: 1000;
-  display: flex;
-  justify-content: center;
-  height: 50px;
-  width: 450px;
-  background-color: #ffd38a;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-box-shadow: -4px 15px 29px -21px rgba(0,0,0,0.75);
-  -moz-box-shadow: -4px 15px 29px -21px rgba(0,0,0,0.75);
-  box-shadow: -4px 15px 29px -21px rgba(0,0,0,0.75);
-  transition: all 0.3s;
-}
-
-#alert.close {
-  border-radius: 10px;
-  position: absolute;
-  z-index: 1000;
-  display: none;
-  justify-content: center;
-  height: 50px;
-  width: 450px;
-  background-color: #ffd38a;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-box-shadow: -4px 15px 29px -21px rgba(0,0,0,0.75);
-  -moz-box-shadow: -4px 15px 29px -21px rgba(0,0,0,0.75);
-  box-shadow: -4px 15px 29px -21px rgba(0,0,0,0.75);
   transition: all 0.3s;
 }
 
