@@ -1,4 +1,5 @@
 // Elementos DOM
+const alert = document.getElementById('alert')
 const buttonAlert = document.getElementById('buttonalert')
 const nameInput = document.getElementById('nameinput')
 const cpfInput = document.getElementById('cpfinput')
@@ -19,6 +20,7 @@ const month = date.getMonth()
 const year = date.getFullYear()
 const arrMonth = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']
 
+
 // Impressão
 // Elementos DOM
 const nameInputPreenchido = document.getElementById('nomepreenchido')
@@ -34,13 +36,17 @@ const saidaInputPreenchido = document.getElementById('saidapreenchido')
 
 // Eventos e Funções
 
+
+buttonAlert.addEventListener('click', () => {
+    alert.classList.add('close')
+})
+
 buttonPrint.addEventListener('click', () => {
     if(nameInput.value === '' | cpfInput.value === '' |
     rgInput.value === '' | cargoInput.value === '' |
     nomeEmpresaInput.value === '' | cnpjInput.value === '' |
     nameInput.value === '' | nameInput.value === ''){
-        document.body.classList.toggle('show')
-        document.getElementById('alert').classList.toggle('show')
+        alert.classList.add('show')
     }
     else {
         nameInputPreenchido.textContent = nameInput.value
@@ -57,7 +63,6 @@ buttonPrint.addEventListener('click', () => {
         window.print()
     }
 })
-
 console.log(rgInputPreenchido.textContent)
 
 // Masks Input

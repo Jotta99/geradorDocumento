@@ -1,0 +1,278 @@
+@media print {
+
+    .site-footer
+    {
+      display: none;
+      visibility: hidden;
+    }
+    form{
+        display: none;
+        visibility: hidden;
+      }
+      
+      #header{
+        display: none;
+      }
+
+      #title{
+        display: none;
+      }
+      body {
+        background: none;
+      }
+      #mainright{
+        display: none;
+      }
+
+      #page{
+            visibility: visible;
+            display: flex;
+            position: absolute;
+            bottom: 850px;
+            right: 45px;
+            width: 21cm;
+            padding: 2cm;
+            margin: 1cm auto;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 24px;
+            text-align: justify;
+            scale: 120%;
+      }
+      
+      #location, #line, #nameassinatura{
+          display: flex;
+          justify-content: center;
+      }
+  }
+
+  @media screen and (max-width: 480px) {
+   
+  }
+
+  @media (max-witdh: 768px) {
+  
+    #header{
+      padding-top: 10px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      position: relative;
+      z-index: 100;
+      -webkit-box-shadow: 3px 0px 23px 5px rgba(0, 0, 0, 0.041);
+      -moz-box-shadow: 3px 0px 23px 5px rgba(0,0,0,0.21);
+      box-shadow: 3px 0px 23px 5px rgba(0, 0, 0, 0.041);
+      height: 30px;
+      background-color: #b3d6dd;
+  }
+  
+  #title{
+      color: rgb(0, 0, 0);
+      display: flex;
+      justify-content: center;
+      padding-top: 20px;
+  }
+  
+  a{
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+      font-weight: 600;
+      padding-bottom: 10px;
+  }
+  
+  a:hover{
+      text-decoration-line: underline;
+  }
+  
+  /* BODY */
+  
+  #form {
+      background-color: #b3d6dd;
+      -webkit-box-shadow: 3px 0px 23px 5px rgba(0, 0, 0, 0.041);
+      -moz-box-shadow: 3px 0px 23px 5px rgba(0,0,0,0.21);
+      box-shadow: 3px 0px 23px 5px rgba(0, 0, 0, 0.041);
+      border-radius: 15px;
+      width: 720px;
+      height: 550px;
+      margin: 26px 0px 15px 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      scale: 95%;
+      left: 75px;
+  }
+  
+  body {
+      background-color: #76b6c0;
+      height: 200px;
+      width: 1349px;
+      
+  }
+  
+  #page {
+      display: none;
+      visibility: hidden;
+  }
+  
+  #nameinput{
+      width: 400px;
+  }
+  #nameinput::first-letter{
+      text-transform: uppercase;
+  }
+  
+  #boxcpfrg{
+      display: flex;
+      align-items: center;
+  }
+  
+  .inputdiv{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0px 13px 0px 13px;
+  }
+  
+  #boxcargonomeempresa{
+      display: flex;
+      align-items: center;
+  }
+  
+  #boxlocation{
+      display: flex;
+      align-items: center;
+  }
+  
+  #ufinput{
+        width: 55px;
+        height: 40px;
+        text-transform: uppercase;
+  }
+  
+  #cityinput{
+      width: 200px;
+      height: 40px;
+  }
+  
+  #dateinput{
+      width: 400px;
+      height: 35px;
+  }
+  
+  #divboxhr {
+      display: flex;
+      align-items: center;
+  }
+  
+  #divboxhr p {
+      text-align: center;
+  }
+  
+  #diventradainput{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      right:20px;
+  }
+  
+  #enterinput {
+      width: 100px;
+      height: 35px;
+  }
+  
+  #saidainput {
+      width: 100px;
+      height: 35px;
+  }
+  
+  #divsaidainput{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      left: 20px;
+  }
+  
+  p{
+      font-size: 16px;
+      padding-top: 16px;
+      padding-bottom: 2px;
+      text-align: left;
+      font-weight: 600;
+  }
+  
+  input{
+      border-radius: 5px;
+      border: transparent;
+      font-size: 15px;
+      text-indent: 5px;
+      width: 280px;
+      height: 35px;
+      outline: none;
+      text-indent: 12px;
+      background-color: #f0f0f0;
+  }
+  
+  #buttonprint{
+      margin-top: 25px;
+      width: 300px;
+      height: 40px;
+      font-size: 24px;
+      font-weight: 600;
+      background-color: #f0f0f0;
+  }
+  
+  /* MAIN RIGHT */
+  
+  #mainfather{
+      display: flex;
+      align-items: center;
+      position: relative;
+      bottom: 230px;
+      height: 1050px;
+  }
+  
+  main img{
+      scale: 70%;
+      margin: 0;
+  }
+  
+  #mainright{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      padding-top: 50px;
+      scale: 80%;
+      right: 95px;
+  }
+  
+  #preencha{
+      position: relative;
+      top: 195px;
+      font-size: 40px;
+      font-weight: 400;
+  }
+  
+  #clique{
+      position: relative;
+      bottom: 210px;
+      font-size: 30px;
+      font-weight: 400;
+  }
+  
+  #epronto{
+      position: relative;
+      bottom: 240px;
+      font-size: 50px;
+      font-weight: 800;
+  }
+  
+  }
