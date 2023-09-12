@@ -36,7 +36,6 @@ const saidaInputPreenchido = document.getElementById('saidapreenchido')
 
 // Eventos e Funções
 
-
 buttonAlert.addEventListener('click', () => {
     alert.style.display = "none"
 })
