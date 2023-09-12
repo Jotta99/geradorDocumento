@@ -42,10 +42,10 @@ buttonAlert.addEventListener('click', () => {
 })
 
 buttonPrint.addEventListener('click', () => {
-    if(nameInput.value === '' | cpfInput.value === '' |
-    rgInput.value === '' | cargoInput.value === '' |
-    nomeEmpresaInput.value === '' | cnpjInput.value === '' |
-    nameInput.value === '' | nameInput.value === ''){
+    if(!nameInput.value | !cpfInput.value |
+    !rgInput.value | !cargoInput.value |
+    !nomeEmpresaInput.value | !cnpjInput.value |
+    !nameInput.value | !nameInput.value){
         alert.style.display = "flex"
     }
     else {
