@@ -47,7 +47,6 @@ function CloseAlert() {
     });
 }
 
-
 buttonPrint.addEventListener('click', () => {
     if(!nameInput.value | !cpfInput.value |
     !rgInput.value | !cargoInput.value |
