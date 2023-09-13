@@ -1,4 +1,5 @@
 // Elementos DOM
+
 const alert = document.getElementById('alert')
 const buttonAlert = document.getElementById('buttonalert')
 const nameInput = document.getElementById('nameinput')
@@ -20,9 +21,9 @@ const month = date.getMonth()
 const year = date.getFullYear()
 const arrMonth = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']
 
-
 // Impressão
 // Elementos DOM
+
 const nameInputPreenchido = document.getElementById('nomepreenchido')
 const cpfInputPreenchido = document.getElementById('cpfpreenchido')
 const rgInputPreenchido = document.getElementById('rgpreenchido')
@@ -35,7 +36,6 @@ const enterInputPreenchido = document.getElementById('entradapreenchido')
 const saidaInputPreenchido = document.getElementById('saidapreenchido')
 
 // Eventos e Funções
-
 
 function CloseAlert() {
     setTimeout(function(){
