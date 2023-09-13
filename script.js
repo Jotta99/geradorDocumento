@@ -36,9 +36,17 @@ const saidaInputPreenchido = document.getElementById('saidapreenchido')
 
 // Eventos e Funções
 
-buttonAlert.addEventListener('click', () => {
-    alert.style.display = "none"
-})
+
+function CloseAlert() {
+    setTimeout(function(){
+        alert.style.display = "none"
+    }, 7000);
+    
+    buttonAlert.addEventListener('click', () => {
+        alert.style.display = "none"
+    });
+}
+
 
 buttonPrint.addEventListener('click', () => {
     if(!nameInput.value | !cpfInput.value |
@@ -46,6 +54,7 @@ buttonPrint.addEventListener('click', () => {
     !nomeEmpresaInput.value | !cnpjInput.value |
     !nameInput.value | !nameInput.value){
         alert.style.display = "flex"
+        CloseAlert()
     }
     else {
         nameInputPreenchido.textContent = nameInput.value
